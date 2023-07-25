@@ -10,7 +10,7 @@ clear
 BackupTheme(){
     cd /var/www/
     tar -cvf backup-panel.tar.gz pterodactyl
-    echo "Installation du thème..."
+    echo "Backup good..."
 
 }
 
