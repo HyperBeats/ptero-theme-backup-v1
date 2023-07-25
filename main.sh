@@ -9,6 +9,7 @@ clear
 
 BackupTheme(){
     cd /var/www/
+    rm backup-panel.tar.gz
     tar -cvf backup-panel.tar.gz pterodactyl
     echo "Backup good..."
 
@@ -17,6 +18,7 @@ BackupTheme(){
 restoreBackUp(){
     echo "Restauration de la sauvegarde..."
     cd /var/www/
+    rm 
     tar -xvf backup-panel.tar.gz
 
     cd /var/www/pterodactyl
